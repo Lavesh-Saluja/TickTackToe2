@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(68, 62, 62);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .container1,
+    .container2,
+    .container3,
+    .container4{
+        height:5vh;
+        width:20vw;
+        background-color:brown;
+        font-size:30px;
+        text-align:center;
+        color:aqua;
+        margin:20px;
+        
+
+    }
+    
+</style>
+<body>
+    <div class="container1">
+        <p class="content1"></p>
+    </div>
+    <div class="container2">
+        <p class="content2"></p>
+    </div>
+    <div class="container3">
+        <p class="content3"></p>
+    </div>
+    <br>
+    <div class="container4">
+        <p class="content4"></p>
+    </div>
+</body>
+<script>
+    const obj1=document.querySelector(".container1");
+    const obj2=document.querySelector(".container2");
+    const obj3=document.querySelector(".container3");
+    const obj4=document.querySelector(".container4");
+    const obj11=document.querySelector(".content1");
+    const obj22=document.querySelector(".content2");
+    const obj33=document.querySelector(".content3");
+    const obj44=document.querySelector(".content4");
+   
+    // console.log(obj.innerHTML);
+    let x=0;
+    
+        obj1.addEventListener("click",function(){
+            if(x==0)
+        obj11.innerHTML="X";
+        else 
+        obj11.innerHTML="O";
+        x=1-x;  
+    });
+
+    obj2.addEventListener("click",function(){
+            if(x==0)
+        obj22.innerHTML="X";
+        else 
+        obj22.innerHTML="O";
+        x=1-x;  
+    });
+
+    obj3.addEventListener("click",function(){
+            if(x==0)
+        obj33.innerHTML="X";
+        else 
+        obj33.innerHTML="O";
+        x=1-x;  
+    });
+
+    obj4.addEventListener("click",function(){
+            if(x==0)
+        obj44.innerHTML="X";
+        else 
+        obj44.innerHTML="O";
+        x=1-x;  
+    });
+  
+    
+   
+</script>
+</html>
