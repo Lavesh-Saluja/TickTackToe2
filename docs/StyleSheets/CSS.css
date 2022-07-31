@@ -16,6 +16,9 @@
       .container7,
       .container8,
       .container9{
+        display:flex;
+        align-items:center;
+        justify-content:center;
           height:13vh;
           width:20vw;
           font-size:30px;
@@ -23,6 +26,15 @@
           color:aqua;
           
           border:1px solid black;
+      }
+      .user{
+        font-size:30vh;
+      }
+      p{
+        font-size:60px;
+      }
+      h1{
+        padding:2vh 0 0 0;
       }
       .container1{
         border-bottom:1px solid black;
@@ -106,4 +118,9 @@
         align-items:center;
         font-size:20px;
       }
-     
+     input{
+      position:relative;
+      top:0;
+      left:0;
+      /* z-index:-1; */
+     }
