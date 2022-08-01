@@ -56,6 +56,7 @@
 
               if(x1==x2 && x2==x3)
               {
+                console.log("c1");
                   flag=1;
                   if (x1=='X')
               alert("player 1 wins");
@@ -64,6 +65,7 @@
               }
               else if(x4==x5 && x5==x6)
               {
+                console.log("c2");
                 flag=1;
                 if (x4=='X')
               alert("player 1 wins");
@@ -72,6 +74,7 @@
               }
               else if(x7==x8 && x8==x9)
               {
+                console.log("c2");
                 flag=1;
                 if (x7=='X')
               alert("player 1 wins");
@@ -80,6 +83,7 @@
               }
               else if(x1==x4 && x4==x7)
               {
+                console.log("c2");
                 flag=1;
                 if (x1=='X')
               alert("player 1 wins");
@@ -88,6 +92,7 @@
               }
               else if(x2==x5 && x5==x8)
               {
+                console.log("c2");
                 flag=1;
                 if (x2=='X')
               alert("player 1 wins");
@@ -96,6 +101,7 @@
               }
               else if(x3==x6 && x6==x9)
               {
+                console.log("c2");
                 flag=1;
                 if (x3=='X')
               alert("player 1 wins");
@@ -104,6 +110,7 @@
               }
               else if(x1==x5 && x5==x9)
               {
+                console.log("c2");
                 flag=1;
                 if (x1=='X')
               alert("player 1 wins");
@@ -112,20 +119,22 @@
               }
              else if(x7==x5 && x5==x3)
               {
+                console.log("c2");
                 flag=1;
                 if (x7=='X')
               alert("player 1 wins");
               else if(x7=='O')
              alert("player 2 wins");
               }
+             
             }
 
-             
+            console.log(c+' '+flag);
+            if(c==9 && flag==0)
+          alert("TIE");
 
           }
-
-          if(c==9 && flag==0)
-        alert("TIE");
+          
             
         
         
