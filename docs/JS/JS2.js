@@ -16,124 +16,40 @@
     const obj77=document.querySelector("#p7");
     const obj88=document.querySelector("#p8");
     const obj99=document.querySelector("#p9");
-   
+    let signal=0;
     // console.log(obj.innerHTML);
     let x=0;
     
-        obj1.addEventListener("click",function(){
-            if(x==0)
-            {
-                obj11.innerHTML="X";
-              
-            }
-        else 
-        {
-            obj11.innerHTML="O";
-          
-        }
-        x=1-x;  
-    });
+        obj1.addEventListener("click",()=>{change(obj11)});
+        obj2.addEventListener("click",()=>{change(obj22)});
+        obj3.addEventListener("click",()=>{change(obj33)});
+        obj4.addEventListener("click",()=>{change(obj44)});
+        obj5.addEventListener("click",()=>{change(obj55)});
+        obj6.addEventListener("click",()=>{change(obj66)});
+        obj7.addEventListener("click",()=>{change(obj77)});
+        obj8.addEventListener("click",()=>{change(obj88)});
+        obj9.addEventListener("click",()=>{change(obj99)});
+    
+    
 
-    obj2.addEventListener("click",function(){
-            if(x==0)
-            {
-                obj22.innerHTML="X";
-                
-            }
-        else 
-        {
-            obj22.innerHTML="O";
-          
-        }
-        x=1-x;  
-    });
-
-    obj3.addEventListener("click",function(){
-            if(x==0)
-            {
-                obj33.innerHTML="X";
-               
-            }
-        else 
-        {
-            obj33.innerHTML="O";
-           
-        }
-        x=1-x;  
-    });
-
-    obj4.addEventListener("click",function(){
-            if(x==0)
-            {
-                obj44.innerHTML="X";
-            }
-        else 
-        {
-            obj44.innerHTML="O";
-          
-        }
-        x=1-x;  
-    });
-    obj5.addEventListener("click",function(){
-            if(x==0)
-            {
-                obj55.innerHTML="X";
-                
-            }
-        else 
-        {
-            obj55.innerHTML="O";
-           
-        }
-        x=1-x;  
-    });obj6.addEventListener("click",function(){
-            if(x==0)
-            {
-                obj66.innerHTML="X";
-                
-            }
-        else 
-        {
-            obj66.innerHTML="O";
-         
-        }
-        x=1-x;  
-    });obj7.addEventListener("click",function(){
-            if(x==0)
-            {
-                obj77.innerHTML="X";
-            
-            }
-        else 
-        {
-            obj77.innerHTML="O";
-          
-        }
-        x=1-x;  
-    });
-    obj8.addEventListener("click",function(){
-            if(x==0)
-            {
-                obj88.innerHTML="X";
-               
-            }
-        else 
-        {
-            obj88.innerHTML="O";
-          
-        }
-        x=1-x;  
-    });
-    obj9.addEventListener("click",function(){
+        function change(obj){
         if(x==0)
         {
-            obj99.innerHTML="X";
+            console.log("change")
+            obj.innerHTML="X";
           
         }
-    else 
-    {
-        obj99.innerHTML="O";
-       
-    }
-    x=1-x;  
-});
+     else 
+        {
+        obj.innerHTML="O";
+            
+        }
+        x=1-x; 
+        if(obj==obj1)
+        signal=1;
+        
+} 
+if(signal==1){
+    obj1.removeEventListener("click",()=>{change(obj11)});
+}
+    

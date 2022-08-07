@@ -40,7 +40,6 @@
         }
           function check()
           {
-            console.log("checked");
             c++;
             let x1=document.getElementById("p1").innerHTML;
             let x2=document.getElementById("p2").innerHTML;
@@ -54,84 +53,151 @@
               if(c>=5)
               {
 
-              if(x1==x2 && x2==x3)
+              if(x1==x2 && x2==x3 && x3!='')
               {
-                console.log("c1");
                   flag=1;
                   if (x1=='X')
-              alert("player 1 wins");
+                {
+                  const Time= setTimeout(function(){
+                    alert("player 1 wins");
+                  },10);
+                }
               else if(x1=='O')
-             alert("player 2 wins");
+             {
+    const Time= setTimeout(function(){
+       alert("player 2 wins");
+         },10);
+ }
               }
-              else if(x4==x5 && x5==x6)
+              else if(x4==x5 && x5==x6 && x4!='')
               {
-                console.log("c2");
+               
                 flag=1;
                 if (x4=='X')
-              alert("player 1 wins");
+                  {
+                  const Time= setTimeout(function(){
+                    alert("player 1 wins");
+                  },10);
+                }
               else if(x4=='O')
-             alert("player 2 wins");
+             {
+    const Time= setTimeout(function(){
+       alert("player 2 wins");
+         },10);
+ }
               }
-              else if(x7==x8 && x8==x9)
+              else if(x7==x8 && x8==x9 && x7!='')
               {
-                console.log("c2");
+                
                 flag=1;
                 if (x7=='X')
-              alert("player 1 wins");
+                    {
+                  const Time= setTimeout(function(){
+                    alert("player 1 wins");
+                  },10);
+                }
               else if(x7=='O')
-             alert("player 2 wins");
+             {
+    const Time= setTimeout(function(){
+       alert("player 2 wins");
+         },10);
+ }
               }
-              else if(x1==x4 && x4==x7)
+              else if(x1==x4 && x4==x7 && x4!='')
               {
-                console.log("c2");
+                
                 flag=1;
-                if (x1=='X')
-              alert("player 1 wins");
+                if(x7=='X')
+                {
+                  const Time= setTimeout(function(){
+                    alert("player 1 wins");
+                  },10);
+                }
+              
               else if(x1=='O')
-             alert("player 2 wins");
+             {
+    const Time= setTimeout(function(){
+       
+       alert("player 2 wins");
+         },10);
+ }
               }
-              else if(x2==x5 && x5==x8)
+              else if(x2==x5 && x5==x8 && x5!='')
               {
-                console.log("c2");
+                console.log("c5");
                 flag=1;
                 if (x2=='X')
-              alert("player 1 wins");
+                  {
+                  const Time= setTimeout(function(){
+                    alert("player 1 wins");
+                  },10);
+                }
               else if(x2=='O')
-             alert("player 2 wins");
+             {
+    const Time= setTimeout(function(){
+       alert("player 2 wins");
+         },10);
+ }
               }
-              else if(x3==x6 && x6==x9)
+              else if(x3==x6 && x6==x9 && x3!='')
               {
-                console.log("c2");
+                console.log("c6");
                 flag=1;
                 if (x3=='X')
-              alert("player 1 wins");
+            {
+                  const Time= setTimeout(function(){
+                    alert("player 1 wins");
+                  },10);
+                }
               else if(x3=='O')
-             alert("player 2 wins");
-              }
-              else if(x1==x5 && x5==x9)
               {
-                console.log("c2");
+                const Time= setTimeout(function(){
+                   alert("player 2 wins");
+                     },10);
+             }
+              }
+              else if(x1==x5 && x5==x9&& x1!='')
+              {
+                console.log("c7");
                 flag=1;
                 if (x1=='X')
-              alert("player 1 wins");
+                {
+                  const Time= setTimeout(function(){
+                    alert("player 1 wins");
+                  },10);
+                }
+              
+             
               else if(x1=='O')
-             alert("player 2 wins");
-              }
-             else if(x7==x5 && x5==x3)
               {
-                console.log("c2");
+                const Time= setTimeout(function(){
+                   alert("player 2 wins");
+                     },10);
+             }
+              }
+             else if(x7==x5 && x5==x3 && x3!='')
+              {
+                console.log("c8");
                 flag=1;
                 if (x7=='X')
-              alert("player 1 wins");
+           {
+                  const Time= setTimeout(function(){
+                    alert("player 1 wins");
+                  },10);
+                }
               else if(x7=='O')
-             alert("player 2 wins");
+             {
+    const Time= setTimeout(function(){
+       alert("player 2 wins");
+         },10);
+ }
               }
-             
+              
+              if(c==9 && flag==0)
+            alert("TIE");
             }
-
             console.log(c+' '+flag);
-            if(c==9 && flag==0)
-          alert("TIE");
+            
 
           }
           
